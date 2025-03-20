@@ -90,7 +90,7 @@ jobs:
         with:
           name: wails-${{ matrix.os }}-${{ matrix.arch }}
           path: |
-            ./v2/cmd/wails/wails-${TAG}-${{ matrix.os }}-${{ matrix.arch }}*
+            ./v2/cmd/wails/wails-${{ env.TAG }}-${{ matrix.os }}-${{ matrix.arch }}*
 
   release:
     name: Create Release and Attach Artifacts
